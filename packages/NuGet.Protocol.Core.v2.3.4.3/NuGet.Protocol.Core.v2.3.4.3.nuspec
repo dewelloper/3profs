@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>NuGet.Protocol.Core.v2</id>
+    <version>3.4.3</version>
+    <title>NuGet.Protocol.Core.v2</title>
+    <authors>NuGet</authors>
+    <owners>NuGet</owners>
+    <licenseUrl>https://raw.githubusercontent.com/NuGet/NuGet.Client/dev/LICENSE.txt</licenseUrl>
+    <projectUrl>https://github.com/NuGet/NuGet.Client</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>NuGet Protocol v2</description>
+    <summary />
+    <copyright>Copyright .NET Foundation. All rights reserved.</copyright>
+    <tags>nuget protocol</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.5">
+        <dependency id="NuGet.Configuration" version="3.4.3" />
+        <dependency id="NuGet.Packaging" version="3.4.3" />
+        <dependency id="NuGet.Protocol.Core.Types" version="3.4.3" />
+        <dependency id="NuGet.Core" version="2.11.1" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Runtime.Serialization" targetFramework=".NETFramework4.5" />
+      <frameworkAssembly assemblyName="WindowsBase" targetFramework=".NETFramework4.5" />
+      <frameworkAssembly assemblyName="mscorlib" targetFramework=".NETFramework4.5" />
+      <frameworkAssembly assemblyName="System" targetFramework=".NETFramework4.5" />
+      <frameworkAssembly assemblyName="System.Core" targetFramework=".NETFramework4.5" />
+      <frameworkAssembly assemblyName="Microsoft.CSharp" targetFramework=".NETFramework4.5" />
+    </frameworkAssemblies>
+  </metadata>
+</package>

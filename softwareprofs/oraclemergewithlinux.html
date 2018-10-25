@@ -1,0 +1,392 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from projects.pulsarmedia.ca/3 Prof Software Concultancy/blog-single-post-full-width.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Jun 2016 20:50:27 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="favicon.html">
+
+    <title>3 Prof Software Concultancy :: Business HTML5 Template</title>
+
+    <link href="bootstrap3/css/bootstrap.css" rel="stylesheet">
+
+    <!-- main css -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- mobile css -->
+    <link href="css/responsive.css" rel="stylesheet">
+
+    <!-- FontAwesome Support -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <!-- FontAwesome Support -->
+
+    <!-- Btns -->
+    <link rel="stylesheet" type="text/css" href="css/btn.css" />
+    <!-- Btns -->
+
+    <!-- Superfish menu -->
+    <link rel="stylesheet" type="text/css" href="css/superfish/superfish.css" />
+    <!-- Superfish menu -->
+
+    <!-- Theme Color selector -->
+    <link href="js/theme-color-selector/theme-color-selector.css" type="text/css" rel="stylesheet">
+    <!-- Theme Color selector -->
+
+    <!-- Iris Color selector -->
+    <link href="js/iris/iris.min.css" type="text/css" rel="stylesheet">
+    <!-- Iris Color selector -->
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" type="text/css" href="js/owl-carousel/owl.carousel.css" />
+    <!-- Owl Carousel -->
+
+    <!-- Twitter feed -->
+    <link rel="stylesheet" type="text/css" href="css/twitterfeed.css" />
+    <!-- Twitter feed -->
+
+    <!-- Typicons -->
+    <link rel="stylesheet" type="text/css" href="css/typicons/typicons.min.css" />
+    <!-- Typicons -->
+
+    <!-- WOW animations -->
+    <link rel="stylesheet" type="text/css" href="js/wow/css/libs/animate.css" />
+    <!-- WOW animations -->
+
+    <!-- Comments -->
+    <link rel="stylesheet" type="text/css" href="css/comments.css" />
+    <link rel="stylesheet" type="text/css" href="css/forms.css" />
+    <!-- Comments -->
+
+    <!-- Development Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700italic,700,800,800italic%7CLato:400,100italic,100,300,300italic,400italic,700,700italic,900,900italic%7CRoboto:400,100,100italic,300,300italic,400italic,500,700,500italic,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <!-- Development Google Fonts -->
+
+</head>
+
+<body>
+
+    <!-- Theme color selector -->
+    <div id="pm_theme_color_selector">
+        <!--        <a class="pm_theme_color_selector_btn"><i class="typcn typcn-cog"></i></a>
+        <p class="pm_theme_color_selector_title">Style Sampler</p>-->
+
+        <div class="pm_theme_color_selector_container">
+            <p>Layout Style</p>
+            <select name="pm_theme_color_selector_mode" id="pm_theme_color_selector_mode">
+                <option value="pm-full-mode" selected>Fullscreen</option>
+                <option value="pm-boxed-mode">Boxed Mode</option>
+            </select>
+        </div>
+        <div class="pm_theme_color_selector_container">
+            <p>Patterns for Boxed Mode</p>
+            <ul class="pm_theme_img_selector" id="pm_theme_pattern_selector">
+                <li><a href="#" id="01_pattern">
+                    <img src="img/boxed-patterns/01_pattern.png" alt="pattern1"></a></li>
+                <li><a href="#" id="02_pattern">
+                    <img src="img/boxed-patterns/02_pattern.png" alt="pattern2"></a></li>
+                <li><a href="#" id="03_pattern">
+                    <img src="img/boxed-patterns/03_pattern.png" alt="pattern3"></a></li>
+                <li><a href="#" id="04_pattern">
+                    <img src="img/boxed-patterns/04_pattern.png" alt="pattern4"></a></li>
+                <li><a href="#" id="05_pattern">
+                    <img src="img/boxed-patterns/05_pattern.png" alt="pattern5"></a></li>
+                <li><a href="#" id="06_pattern">
+                    <img src="img/boxed-patterns/06_pattern.png" alt="pattern6"></a></li>
+            </ul>
+        </div>
+
+        <div class="pm_theme_color_selector_container">
+            <p>Backgrounds for Boxed Mode</p>
+            <ul class="pm_theme_img_selector" id="pm_theme_background_selector">
+                <li><a href="#" id="01_bg">
+                    <img src="img/boxed-bgs/01_bg_thumb.jpg" alt="bg1"></a></li>
+                <li><a href="#" id="02_bg">
+                    <img src="img/boxed-bgs/02_bg_thumb.jpg" alt="bg2"></a></li>
+                <li><a href="#" id="03_bg">
+                    <img src="img/boxed-bgs/03_bg_thumb.jpg" alt="bg3"></a></li>
+                <li><a href="#" id="04_bg">
+                    <img src="img/boxed-bgs/04_bg_thumb.jpg" alt="bg4"></a></li>
+                <li><a href="#" id="05_bg">
+                    <img src="img/boxed-bgs/05_bg_thumb.jpg" alt="bg5"></a></li>
+            </ul>
+        </div>
+
+    </div>
+    <!-- Theme color selector -->
+
+    <!-- Search container -->
+    <div class="pm-search-container" id="pm-search-container">
+        <!-- Search window -->
+        <div class="pm-search-columns">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 pm-center">
+                        <p>Search News Posts</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="pm-search-box">
+                            <i class="fa-search pm-search-submit" id="pm-search-submit"></i>
+                            <form name="searchform" id="pm-searchform" method="get" action="#">
+                                <input type="text" name="s" placeholder="Type Keywords...">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <i class="fa fa-times pm-search-exit" id="pm-search-exit"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Search window end -->
+    </div>
+    <!-- Search container end -->
+
+    <div id="pm_layout_wrapper" class="pm-full-mode">
+        <!-- Use wrapper for wide or boxed mode -->
+
+
+
+        <header>
+
+            <div class="container pm-header-container">
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-3 col-sm-12 pm-header-logo-div">
+                        <div class="pm-header-logo-container">
+                            <a href="index-2.html">
+                                <img src="img/3 Prof Software Concultancy-wordpress-theme.jpg" class="img-responsive" alt="3 Prof Software Concultancy Theme"></a>
+                        </div>
+
+                        <div class="pm-header-mobile-btn-container">
+                            <button type="button" class="navbar-toggle pm-main-menu-btn" id="pm-main-menu-btn" data-toggle="collapse" data-target=".navbar-collapse"><i class="fa fa-bars"></i></button>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-8 col-md-9 col-sm-12 pm-main-menu">
+
+                        <nav class="navbar-collapse collapse">
+
+                            <!-- superfish-->
+                            <ul class="sf-menu" id="pm-nav">
+                                <li class="current">
+                                    <a href="#">Ürünler</a>
+                                    <ul>
+                                        <li>
+                                            <a href="speechsearch.html">Speech Search</a>
+                                        </li>
+                                        <li>
+                                            <a href="b2bb2c.html">B2B-B2C</a>
+                                        </li>
+                                        <li>
+                                            <a href="b2bb2c.html">Oto Galeri</a>
+                                        </li>
+                                        <li>
+                                            <a href="b2bb2c.html">Erp Entegre E-Ticaret</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">DESTEKLER</a>
+                                    <ul>
+                                        <li>
+                                            <a href="responsive-grid.html">Yazılım Geliştirme desteği</a>
+                                        </li>
+                                        <li>
+                                            <a href="accordion-tabs.html">Database Yönetim Desteği</a>
+                                        </li>
+                                        <li>
+                                            <a href="carousels.html">Startup ve Analiz Desteği</a>
+                                        </li>
+                                        <li>
+                                            <a href="alerts-notifications.html">SEO Desteği</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="who-we-are.html">Biz kimiz</a>
+                                </li>
+                                <li>
+                                    <a href="about-us.html">Hakkımızda</a>
+                                </li>
+                                <li>
+                                    <a href="contact-us.html">İletişim</a>
+                                </li>
+                            </ul>
+                            <!-- /superfish -->
+
+                        </nav>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+        <!-- /header -->
+
+        <!-- SUBHEADER AREA -->
+
+        <div class="pm-sub-header-container pm-parallax-panel" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="95">
+
+            <div class="pm-sub-header-breadcrumbs">
+                <ul class="pm-sub-header-breadcrumbs-ul">
+                    <li><a href="../index-2.html">Home</a></li>
+                    <li><i class="fa fa-angle-right"></i></li>
+                    <li class="current">oracle merges with...</li>
+                </ul>
+            </div>
+
+            <div class="pm-sub-header-title-container">
+                <h5 class="pm-single-blog-post-header-title ">Oracle merges with Linux on acquisition</h5>
+            </div>
+
+            <div class="pm-sub-header-post-pagination">
+                <ul class="pm-sub-header-post-pagination-ul">
+                    <li class="prev pm_tip_static_top" title="Previous post"><a href="mongodbdestekleri.html" class="fa fa-angle-left"></a></li>
+                    <li class="next pm_tip_static_top" title="Next post"><a href="oraclemergewithlinux.html" class="fa fa-angle-right"></a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- SUBHEADER AREA end -->
+
+        <!-- BODY AREA -->
+
+        <div class="container pm-containerPadding60">
+            <div class="row">
+
+                <!-- Single Blog post content -->
+                <div class="col-lg-12">
+
+                    <!-- Single Blog post -->
+                    <div class="pm-single-blog-post-img-container" style="background-image: url(img/blog/02_post.jpg);">
+                        <div class="pm-single-blog-post-date">
+                            <p class="pm-month">Haz</p>
+                            <p class="pm-day">14</p>
+                        </div>
+                        <div class="pm-single-blog-post-title">
+                            <p class="pm-post-title">Oracle - Linux Sistemleri</p>
+                        </div>
+                    </div>
+
+                    Oracle ve Linux birlikteliğini birçok firmada kurduk ve takip ettiğimiz ve edindiğimiz tecrübeleri uygulamaya davam ediyoruz.
+
+                    <p>ORACLE RAC (REAL APPLICATION CLUSTERS)</p>
+
+                    <p>Oracle RAC, Oracle veritaban&#305;n&#305;n Enterprise Edition ve Standart Edition s&uuml;r&uuml;mleri ile kullan&#305;labilinen Oracle&rsquo;&#305;n en &uuml;st seviye teknolojisidir. Payla&#351;&#305;ml&#305; disk mimarisini (Shared disk architecture) kullan&#305;r. Ortak bir depolama (storage) birimi kullan&#305;r ve birden fazla sunucu (node) ile hizmet vererek i&#351; s&uuml;reklili&#287;inize imkan tan&#305;r. RAC denildi&#287;inde benim ilk akl&#305;ma gelen grid kavram&#305;d&#305;r. Oracle&rsquo;&#305;n 9i versiyonuna kadar (i) olarak an&#305;lmas&#305;n&#305; ve 10g versiyonu ile (g) olarak an&#305;lmas&#305;n&#305; hep merak etmi&#351;imdir. Sizlerde merak ediyorsunuzdur diye d&uuml;&#351;&uuml;nd&uuml;m. Oracle &ouml;nce internet kullan&#305;c&#305;lar&#305;na odakland&#305; ve s&uuml;r&uuml;mlerine hep (i)nternet harfi ile isim verdi. 8i, 9i versiyonlar&#305;nda oldu&#287;u gibi. Sonra 10g versiyonuyla grid teknolojisini &ouml;n plana &ccedil;&#305;kard&#305; ve s&uuml;r&uuml;m isimlerine (g)rid harfi ile isim vermeye ba&#351;lad&#305;. Grid mimarisinde ortak bir depolama (storage) birimi &uuml;zerinde birden fazla sunucu vard&#305;r. B&ouml;ylelikle siz i&#351; s&uuml;reklili&#287;inizi garanti alt&#305;na alm&#305;&#351; olacaks&#305;n&#305;z. Sunucular&#305;n&#305;z&#305;n biri ar&#305;zaland&#305;&#287;&#305;nda hizmetiniz kesilmeyecek di&#287;er sunucu ile hizmete vermeye devam edebileceksiniz. Esnek bir mimari ile ihtiya&ccedil;lar&#305;n&#305;z do&#287;rultusunda cluster yap&#305;n&#305;za yeni sunucu ilave edebilecek veya &ccedil;&#305;karabileceksiniz.</p>
+
+                    <p>9i &ouml;ncesinde &ldquo;oracle parallel server&rdquo; ad&#305;yla tan&#305;d&#305;&#287;&#305;m&#305;z oracle cluster veritaban&#305;n&#305;, 9i s&uuml;r&uuml;m&uuml; ile daha da g&uuml;&ccedil;lendirilmi&#351; bir teknolojiyi bar&#305;nd&#305;ran &ndash; RAC ad&#305;yla tan&#305;d&#305;k. Oracle eksiklikleri s&uuml;rekli yak&#305;ndan takip etti ve her versiyon ile bu eksiklikleri tamamlamaya b&uuml;y&uuml;k &ouml;zen g&ouml;sterdi.</p>
+
+                    <p>Son s&uuml;r&uuml;m&uuml; 11g Release 2 ile RAC, bize bir&ccedil;ok konuda faydalar sunmaktad&#305;r. Bu faydalar:</p>
+
+                    <p>Y&uuml;ksek Kullan&#305;labilirlik (High Availability) &ndash; Sunucular&#305;n&#305;zdan biri ar&#305;zalansa bile, herhangi bir hizmet kesintisi olmaz. RAC grubunuzdaki di&#287;er sunucu t&uuml;m i&#351;lem y&uuml;k&uuml;n&uuml; &uuml;zerine alacakt&#305;r.</p>
+
+                    <p>&Ouml;l&ccedil;eklenebilirlik: &#304;htiya&ccedil;lar&#305;n&#305;z do&#287;rultusunda RAC grubunuza yeni sunucu ekleyebilir veya &ccedil;&#305;karabilirsiniz.</p>
+
+                    <p>Y&ouml;netilebilirlik: Birden fazla veritaban&#305; RAC k&uuml;me i&ccedil;ine konsolide edilebilir.</p>
+
+                    <p>RAC avantaj&#305;n&#305; sizlere bir &ouml;rnekle anlatmadan yapamayaca&#287;&#305;m :) G&uuml;&ccedil;l&uuml; bir sunucu istiyorsunuz. &Ccedil;&uuml;nk&uuml; &uuml;zerinde &ccedil;al&#305;&#351;acak veritaban&#305; sizin i&ccedil;in &ccedil;ok kritik. Bu sunucunun 32 i&#351;lemcili ve 128 GB haf&#305;zaya sahip olmas&#305;n&#305; istedi&#287;iniz d&uuml;&#351;&uuml;nelim. &Ouml;ncelikle piyasada b&ouml;yle bir sunucuyu kolay bulamazs&#305;n&#305;z. HP veya IBM&rsquo;e &ouml;zel istek yapman&#305;z gerekiyor. Onlarda size istedi&#287;iniz sunucuyu konfig&uuml;re edip g&ouml;ndereceklerdir. Bu sunucunun size maliyeti olduk&ccedil;a fazla olacakt&#305;r. Bu sunucuyu ald&#305;&#287;&#305;n&#305;z&#305; ve &uuml;zerine veritaban&#305;n&#305;z&#305; olu&#351;turup hizmet vermeye ba&#351;lad&#305;&#287;&#305;n&#305;z&#305; d&uuml;&#351;&uuml;nelim. Elinizde tek bir sunucu var. Peki sunucu &uuml;zerinde herhangi bir donan&#305;m ar&#305;zas&#305; olursa ne yapacaks&#305;n&#305;z? Sizin i&ccedil;in kritik olan, 7/24 &ccedil;al&#305;&#351;an veritaban&#305;n&#305; kapatman&#305;z gerekecek. Donan&#305;m ar&#305;zas&#305;n&#305; &ccedil;&ouml;z&uuml;p veritaban&#305;n&#305;z&#305; tekrar a&ccedil;acaks&#305;n&#305;z. Peki i&#351; s&uuml;reklili&#287;iniz ne oldu? Ma&#287;dur olan m&uuml;&#351;terileriniz ne olacak? Benim size bir tavsiyem var. Oracle&rsquo;&#305;n &ccedil;&ouml;z&uuml;m&uuml; RAC kullanmak :) &#304;&#351; s&uuml;reklili&#287;i mi istiyorsunuz? Evet. M&uuml;&#351;terilerinizi ma&#287;dur etmek istemiyor musunuz? &#304;stemiyorum. O zaman veritaban&#305;m&#305;z&#305; RAC &uuml;zerinde &ccedil;al&#305;&#351;t&#305;raca&#287;&#305;z. Bu durumda ne yapmam&#305;z gerekecek? Piyasada &ccedil;ok rahat bulabilece&#287;im 4 sunucuya ihtiyac&#305;m var. Her biri 8 i&#351;lemci, 32 GB haf&#305;zaya sahip. Bu 4 sunucuyu grid mimarisi olarak adland&#305;rd&#305;&#287;&#305;m&#305;z &#351;ekilde RAC yapaca&#287;&#305;m. Toplamda 32 i&#351;lemci ve 128 GB haf&#305;zaya sahip olaca&#287;&#305;m. Ama maliyeti daha d&uuml;&#351;&uuml;k olacak. &Uuml;stelik sunucular&#305;mdan biri ar&#305;zalansa di&#287;er &uuml;&ccedil;&uuml; t&uuml;m y&uuml;k&uuml; &uuml;zerine alacak ve 7/24 kesintisiz hizmet verebilece&#287;im. M&uuml;&#351;terilerim memnun, ben memnunum ve herkes memnun olacak</p>
+
+                    <!-- Single post pagination -->
+                    <div class="pm-single-blog-post-pagination">
+                        <ul class="pm-post-pagination clearfix reset-pulse-sizing">
+                            <li>Read More</li>
+                            <li class="current"><span class="current">1</span></li>
+                            <li class="inactive"><a href="#" class="inactive">2</a></li>
+                        </ul>
+                    </div>
+                    <!-- Single post pagination end -->
+
+                    <div class="pm-single-blog-post-categories-container">
+
+                        <!-- Categories -->
+                        <ul class="pm-single-blog-post-categories">
+                            <li class="icon"><i class="fa fa-folder-open"></i></li>
+                            <li><a href="#">Business</a>,</li>
+                            <li><a href="#">Corporate</a></li>
+                        </ul>
+                        <!-- Categories end -->
+
+                        <!-- Tags -->
+                        
+                        <!-- Tags end -->
+
+                    </div>
+
+
+                    <!-- Related posts end -->
+
+                    <!-- Comments -->
+
+
+                </div>
+                <!-- Blog post area end -->
+
+            </div>
+        </div>
+
+        <!-- BODY AREA end -->
+
+        
+
+
+        <div class="pm-footer-copyright">
+        	
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-5 col-sm-12 pm-footer-copyright-col">
+                        <p>©2016 3 Prof Software Concultancy. Produced by 3 Prof Software Concultancy.</a></p>
+                    </div>
+                    <div class="col-lg-7 col-md-7 col-sm-12 pm-footer-navigation-col">
+                        <ul class="pm-footer-navigation" id="pm-footer-nav">
+                            <li><a href="services.html">Yazılımlar</a></li>
+                            <li><a href="workshops.html">DESTEKLER</a></li>
+                            <li><a href="courses.html">Biz Kimiz</a></li>
+                            <li><a href="about-us.html">Hakkımızda</a></li>
+                            <li><a href="contact-us.html">İletişim</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+    <!-- /pm_layout-wrapper -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/jquery.viewport.mini.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="bootstrap3/js/bootstrap.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/owl-carousel/owl.carousel.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery.tooltip.js"></script>
+    <script src="js/jquery.hoverPanel.js"></script>
+    <script src="js/superfish/superfish.js"></script>
+    <script src="js/superfish/hoverIntent.js"></script>
+    <script src="js/tinynav.js"></script>
+    <script src="js/stellar/jquery.stellar.js"></script>
+    <script src="js/countdown/countdown.js"></script>
+    <script src="js/theme-color-selector/theme-color-selector.js"></script>
+    <script src="js/wow/wow.min.js"></script>
+
+    <p id="back-top" class="visible-lg visible-md visible-sm"></p>
+
+</body>
+
+<!-- Mirrored from projects.pulsarmedia.ca/3 Prof Software Concultancy/blog-single-post-full-width.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Jun 2016 20:50:27 GMT -->
+</html>
